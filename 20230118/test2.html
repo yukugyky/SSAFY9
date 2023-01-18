@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>안녕 나는 자룡이</h1>
+    <div class="container">
+      <div class="img-wrapper">
+        <img src="./jony.jpg" alt="자룡이" height="300" />
+      </div>
+      <div class="hobby-list">
+        <h2>취미목록</h2>
+        <ul>
+          <li>영화보기</li>
+          <li>코딩하기</li>
+          <li>산책가기</li>
+          <li>게임하기</li>
+          <li>등산가기</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const imgWrapper=document.querySelector(".img-wrapper");
+      const img=imgWrapper.querySelector("img");
+      img.src="./profile.jpg";
+      const h1=document.querySelector("h1")
+      h1.textContent="안녕 나는 유경이";
+
+      // console.log(img);
+      // console.dir(img)
+
+      const li=document.querySelector(".hobby-list>ul>li"); //맨앞 li만 나타냄(영화보기)
+      console.log(li);
+      const li2=document.querySelectorAll(".hobby-list>ul>li"); //모든 li보려면 queryselectorAll
+      console.log(li2);
+      const li3=document.querySelectorAll(".hobby-list li"); //'>'이건 바로 아래있는거 찾기 '>'없으면 그 아래 모두 포함
+      console.log(li3);
+
+      li.textContent="낚시";
+      li2[1].textContent="집콕"; //이건 어레이니깐 인덱스 표시해야함
+      li3[2].textContent="싸피"; //이건 어레이니깐 인덱스 표시해야함
+  
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원가입</h1>
+    <input class = "id" type="text" placeholder="아이디 입력"/>
+    <input class ="pwd" type="text" placeholder="비밀번호 입력"/>
+
+    <button>회원가입하기</button>
+
+    <script>
+        const inputId =document.querySelector(".id");
+        const inputPwd=document.querySelector(".pwd")
+        const btn=document.querySelector("button");
+
+        btn.addEventListener("click", function(e){
+            if(inputId.value===""||inputPwd.value===""){
+                alert("공백입니다!")
+            }
+            else{
+                alert("회원가입 완료~")
+            }
+            
+
+        });
+    </script> 
+</body>
+</html>

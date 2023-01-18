@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>이벤트</h1>
+    <!-- <button onclick="showMessage()">나를 클릭해</button> -->
+   <button>나를 클릭해</button>
+   <script>
+        function showMessage(){
+            console.log("안뇽");
+        }
+
+        const btn=document.querySelector("button");
+        btn.addEventListener("click", showMessage);
+        //첫번재 파라미터는 이벤트의 종류를 의미함
+        //함수 소괄호 안붙이는 이유가 결과값이 아니라 함수자체를 넣어서 때가 되면 실행하라는 의미
+        //이벤트는 태그랑은 상관없음 버튼말고 div,p 아무 태그나 모두 가능함
+        // btn.addEventListener("click", function (){
+        //     console.log("안뇽");
+        // }); 이렇게 많이 쓰임 왜냐면 재사용 많이 할 일이 없으니깐 그냥 함수 바로 붙임
+
+    </script>
+</body>
+</html>
