@@ -1,0 +1,11 @@
+.carousel-item{
+    /* vw,vh
+    브라우저 크기에 대ㅡㅇㅇ
+    %는 부모의 영향을 받음 */
+
+    height:100vh;
+}
+
+nav{
+    z-index: 10;
+}
