@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC World</title>
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid gray;
+            
+        }
+        .header{
+            flex: 1;
+            border: 1px solid gray;
+            background-color: gray;
+            text-align: center;
+        }
+        .KFC-World{
+            flex: 3;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .buger-image{
+            position: relative;
+            background-image: url("hambuger3.png");
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+
+        }
+        .menu{
+            flex:2;
+            text-align: center;
+        }
+        .buger1{
+            flex: 3;
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+        }
+        .buger-imagemain{
+            flex:1;
+        }
+        .buger-imagemain>img{
+            height: 100px;
+            width: 100px;
+        }
+        .bugger-soge{
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            border: 1px solid gray;
+        }
+        .buger1a{
+            position: relative;
+            text-align: center;
+            background-color: blue;
+            color:aliceblue;
+            margin:2px;
+        }
+        .buger1b{
+            flex:3;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .buger2{
+            flex: 3;
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+        }
+        .buger-imagemain2{
+            flex:1;
+        }
+        .buger-imagemain2>img{
+            height: 100px;
+            width: 100px;
+        }
+        .bugger-soge2{
+            display:flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            border: 1px solid gray;
+        }
+        .buger2a{
+            position: relative;
+            text-align: center;
+            background-color: blue;
+            color:aliceblue;
+            margin:2px;
+        }
+        .buger2b{
+            flex:3;
+            text-align: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- header -->
+        <div class="header">
+            <h2>KFC World</h2>
+        </div>
+        <div class="KFC-World">
+            <div class="buger-image">
+            </div>
+            
+            <div class="menu">
+                <h2>메뉴판</h2>
+            </div>
+        </div>
+        <div class="buger1">
+
+            <div class="buger-imagemain">
+            <img src="./hamburger2.jpg">
+            </div>
+
+            <div class="bugger-soge">
+                <div class="buger1a">
+                    Fire Bugger
+                </div>
+                <div class="buger1b">
+                    맵지 않습니다.<br>다만 뜨거운 불타는 버거
+                </div>
+            </div>
+
+        </div>
+
+        <div class="buger2">
+            
+            <div class="bugger-soge2">
+                <div class="buger2a">
+                    Degda Bugger
+                </div>
+                <div class="buger2b">
+                    하나의 가격으로<br>3개의 버거를 먹는 재미
+                </div>
+                </div>
+
+                <div class="buger-imagemain2">
+                    <img src="./3hamburgers.png">
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>
