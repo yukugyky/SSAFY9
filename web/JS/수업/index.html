@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display:flex;
+            flex-direction: column;
+            width:20%
+        }
+        .container>*{
+            margin:12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        배열 <input id="array-input">
+        포함되었는지 확인 할 값: <input id="value-input">
+        <button class="result-button">결과</button>
+    </div>
+    <div class="result"></div>
+
+    <script>
+        const arrayInput=document.querySelector('#array-input');
+        const valueInput=document.querySelector('#value-input');
+        const resultButton=document.querySelector('.result-button');
+        const result=document.querySelector('.result');
+
+        resultButton.addEventListener('click', function(){
+            const array=arrayInput.value.split(",");
+            
+            const isImported=array.some(element=>element===valueInput.value);
+            if(isImported===true){
+                result.textContent="포함";
+            }else{
+                result.textContent="미포함";
+            }
+        })
+    </script>
+</body>
+</html>
