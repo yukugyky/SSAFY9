@@ -1,0 +1,18 @@
+.container{
+    height:300px;
+    width: 400px;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* rows 가로를 1:1:1로 나눔 */
+
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+/* 나누어진 가로에 세로로 1:1:1:1로 나눔 */
+
+.column{
+    border: 1px solid black;
+
+}

@@ -21,15 +21,35 @@
       { name: 'Tom', age: 35, isMarried: true, balance: 500, },
     ]
 
-    //forEach
-    const Name=users.forEach((user)=>{
-      console.log(user.name);
-    });
+    //1.forEach
+    const names=users.forEach(data=>{
+      console.log(data.name)
+    })
 
-    //filter
-    const married = users.filter((user)=>{
-      return user.isMarried==true
-    });
+    //2.filter
+    const married=users.filter(data=>{
+      if(data.isMarried===true){
+        return data;
+      }
+    })
+
+    //3.find
+    const tom=users.find(data=>data.name=='Tom');
+
+    //4.map
+    const newUsers=users.map(data=>({
+      ...data, isAlive:true
+    }))
+
+    //5.reduce
+    const totalBalance=users.reduce((acc,cur)=>{
+      acc.push(cur.balance);
+      return acc;
+    },[])
+
+
+
+    
 
   </script>
 </body>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .one,
+      .two,
+      .three,
+      .four {
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      .one {
+        height: 200px;
+        width: 800px;
+      }
+      .two {
+        height: 150px;
+        width: 600px;
+      }
+      .three {
+        height: 100px;
+        width: 400px;
+      }
+      .four{
+        height: 100px;
+        width: 400px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="one">
+      one
+      <div class="two">
+        two
+        <div class="three">three</div>
+      </div>
+    </div>
+    <div class="four">four</div>
+    <script>
+      const divs = document.querySelectorAll("div");
+      divs.forEach((div) => {
+        div.addEventListener("click", (event) => {
+        //   console.log(event.target.className); //타켓은 실제로 이벤트가 작동되어야만 하는 곳
+        console.log(event.currentTarget.className); //currentTarget은 현재 이벤트가 머물러 있는 곳
+        },
+        {
+            capture:true, //그 방향이 바뀌는거
+        } //옵션값
+        );
+      });
+
+    //   //해당 디브에만 나타내려면? 부모만 선택해서
+    //   const one=document.querySelector('.one');
+    //   one.addEventListener("click",(event)=>{
+    //     console.log(event.target.className);
+    //   })
+
+    </script>
+  </body>
+</html>

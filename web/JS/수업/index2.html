@@ -11,6 +11,7 @@
     <button>가져오기</button>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.3.2/dist/axios.min.js"></script>
     <script>
+
     //   const getData = async () => {
     //     try {
     //       const response = await axios.get( 
@@ -21,6 +22,7 @@
     //       console.log(error);
     //     }
     //   };
+
       const getData = () => {
         axios
           .get("https://jsonplaceholder.typicode.com/todos")
@@ -31,10 +33,11 @@
             console.log(error);
           });
       };
-      
+
       const btn = document.querySelector("button");
       btn.addEventListener("click", getData);
 
     </script>
   </body>
 </html>
+
