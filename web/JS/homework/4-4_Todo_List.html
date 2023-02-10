@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form>
+  <form action="/todos/">
     <input type="text">
     <button type="button">Todo</button>
   </form>
@@ -21,8 +21,11 @@
 
 <script>
   const btn = document.querySelector('button')
+  const form=document.querySelector("form");
 
   function addTodo (event) {
+    //이벤트 중지
+    event.preventDefault();
 
     // 입력 element를 찾고 해당 입력 element의 value 값을 저장한다.
     const Input=document.querySelector('input')
