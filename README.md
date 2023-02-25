@@ -1,5 +1,4 @@
-## 자룡이의 깃수업~~
+## SSAFY 9기 임베디드반
 
-## hihi
-## 신나
-자룡이는 짱이야
+## JAVA/C++/Linux/Javascript
+## 알고리즘
