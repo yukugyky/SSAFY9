@@ -44,7 +44,8 @@
     "xtr1common": "cpp",
     "xutility": "cpp",
     "queue": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "xhash": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",

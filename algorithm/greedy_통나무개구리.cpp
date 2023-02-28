@@ -75,7 +75,6 @@ int main() {
 
 	}
 
-
 	for (int i = 0; i < Q; i++)
 	{
 		int startLog = 0;

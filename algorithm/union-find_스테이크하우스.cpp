@@ -25,7 +25,6 @@ void Union(char a, char b)
     parent[pb] = pa;
 }
 
-
 void input() {
     cin >> N >> K; //품목리스트의 개수, 고기의 개수
 }

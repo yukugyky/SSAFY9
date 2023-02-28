@@ -19,9 +19,6 @@ int fibo(int N) {
 }
 
 int main() {
-
 	cin >> N;
 	cout << fibo(N);
-
-
 }
