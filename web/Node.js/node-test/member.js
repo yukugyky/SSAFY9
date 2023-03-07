@@ -1,4 +1,3 @@
-
 const member={
 a:30,
 b:50
