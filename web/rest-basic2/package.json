@@ -1,5 +1,5 @@
 {
-  "name": "jonny-git",
+  "name": "rest-start-sample-code",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vue/cli": "^5.0.8"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.1.2"
   }
 }

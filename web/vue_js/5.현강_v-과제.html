@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div v-if="renderA">a</div>
+        <div v-if="renderB">b</div>
+        <div v-if="renderC">c</div>
+        <div v-if="renderD">d</div>
+        <div v-if="renderE">e</div>
+        <div v-if="renderF">f</div>
+        <div v-if="renderG">g</div>
+        <button @click="run">go</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script>
+    <script>
+        let i=0;
+        const app=new Vue({
+            el: "#app",
+            data(){ 
+                return{
+                    renderA: true,
+                    renderB: true,
+                    renderC: true,
+                    renderD: false,
+                    renderE: false,
+                    renderF: false,
+                    renderG: false,
+                }
+            },
+            methods:{
+                run(){
+                    i++;
+                    if(i===3){
+                        i=0;
+                    }
+                    if(i===0){
+                        this.renderA= true;
+                        this.renderB= true;
+                        this.renderC= true;
+                        this.renderD= false;
+                        this.renderE= false;
+                        this.renderF= false;
+                        this.renderG= false;
+                    }
+                    if(i===1){
+                        this.renderA=false;
+                        this.renderB=false;
+                        this.renderC=false;
+                        this.renderD=true;
+                        this.renderF=false;
+                        this.renderE=true;
+                        this.renderG=false;
+                    }
+                    if(i===2){
+                        this.renderA= false;
+                        this.renderB= false;
+                        this.renderC= false;
+                        this.renderD= false;
+                        this.renderE= false;
+                        this.renderF= true;
+                        this.renderG= true;
+                    }
+                },
+            }
+        })
+    </script>
+</body>
+</html>
